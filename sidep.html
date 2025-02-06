@@ -114,7 +114,6 @@
       }
       .skil {
         text-align: left;
-        margin-bottom: ;
         color: cornflowerblue;
         font-family: Georgia, "Times New Roman", Times, serif;
         letter-spacing: 3px;
@@ -133,9 +132,7 @@
         justify-content: space-around;
         text-align: center;
       }
-      .bm {
-        width: ;
-      }
+
       .bll {
         font-size: 30px;
         margin-top: 60px;
@@ -189,12 +186,12 @@
       @media (max-width: 600px) {
         body {
           display: grid;
-          grid-template-columns:;
+          grid-template-columns:1fr;
           grid-template-areas:
-            "main main main main"
-            "main main main main"
-            "main main main main"
-            "footer footer footer footer";
+            "main"
+            "main"
+            "main"
+            "footer";
           width: 100%;
           grid-template-rows: 1fr 1fr auto auto;
         }
@@ -213,8 +210,7 @@
         .ddiv {
           display: none;
         }
-        ul {
-        }
+
         .main1 {
           position:static;
           height: 10%;
