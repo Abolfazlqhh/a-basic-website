@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+}
+body {
+display: grid;
+grid-template-columns: 100px 1fr;
+grid-template-areas:
+  "navbar main"
+  "navbar footer";
+margin: 0;
+background-image: url("images/rr/download\ \(2\).jpg");
+background-attachment: fixed;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+grid-template-rows: auto 1fr;
+min-height: 100vh;
+}
+nav {
+grid-area: navbar;
+background-color: black;
+grid-template-columns: 1fr;
+display: grid;
+grid-template-areas:
+  "ddiv"
+  "lii"
+  "lii"
+  "lii"
+  "lii";
+position: fixed;
+top: 0;
+align-self: flex-start;
+height: 100vh;
+width: 100px;
+}
+main {
+grid-area: main;
+text-align: center;
+width: 90%;
+height: 100%;
+max-width: 1300px;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+}
+footer {
+grid-area: footer;
+color: aqua;
+;
+}
+.lii {
+grid-area: lii;
+color: aliceblue;
+padding: 26px 0;
+list-style-type: none;
+border: no;
+background-color: black;
+}
+.ddiv {
+grid-area: ddiv;
+background-image: url("images/The\ Weeknd\ &\ Gesaffelstein\ Wallpaper.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+opacity: 0.8;
+margin-bottom: 40px;
+}
+a {
+text-decoration: none;
+}
+ul {
+margin-left: -40px;
+text-align: center;
+}
+li:hover {
+background-color: rgb(7, 65, 104);
+position: static;
+}
+.main1 {
+font-size: 90px;
+color: aliceblue;
+top: 11%;
+height: 24%;
+position: relative;
+}
+.main2 {
+color: aliceblue;
+text-align: justify;
+font-size: 17px;
+word-spacing: 3px;
+}
+h1 {
+text-align: left;
+margin-bottom: 20px;
+color: aliceblue;
+}
+hr {
+width: 200px;;
+opacity: 0.7;
+margin: 0px 0px;
+color: azure;
+}
+.skil {
+text-align: left;
+color: cornflowerblue;
+font-family: Georgia, "Times New Roman", Times, serif;
+letter-spacing: 3px;
+font-size: 19px;
+}
+.statis {
+background-color: aliceblue;
+width: 100%;
+height: 30px;
+}
+.ppl {
+width: 100%;
+height: 180px;
+background-color: aliceblue;
+display: flex;
+justify-content: space-around;
+text-align: center;
+}
+
+.bll {
+font-size: 30px;
+margin-top: 60px;
+font-weight: 600;
+}
+.dnld{
+width: 148px;
+height: 40px;
+background-color:aliceblue;
+margin-top: 30px;
+border-radius: 2px;
+color: black;
+float: left;
+cursor: pointer;
+margin-right: 100%;
+margin-bottom: 30px;
+}
+button:hover{
+    background-color:rgb(189, 189, 189);
+}
+.photos{
+display: flex;
+flex-wrap: wrap;
+padding: 0 2px;
+}
+.mnm{
+flex: 50%;
+max-width: 50%;
+padding: 0 2px;
+}
+.mnm img {
+margin-top: 4px;
+vertical-align: middle;
+opacity: 0.7;
+}
+img:hover{
+opacity: 1;
+}
+.cntc{
+text-align: left;
+margin-top: 30px;
+color:aquamarine;
+font-size: 25px;
+letter-spacing: 2px;
+}
+i{
+font-size: 40px;
+margin-right: 50px;
+}
+
+@media (max-width: 600px) {
+body {
+  display: grid;
+  grid-template-columns:1fr;
+  grid-template-areas:
+    "main"
+    "main"
+    "main"
+    "footer";
+  width: 100%;
+  grid-template-rows: 1fr 1fr auto auto;
+}
+nav {
+  height: 0px;
+  width: 100%;
+  padding: 0;
+  top: 0;
+}
+.lii {
+  padding: 17px 0;
+  float: left;
+  width: 25%;
+  margin-top: -20px;
+}
+.ddiv {
+  display: none;
+}
+
+.main1 {
+  position:static;
+  height: 10%;
+  margin-top: 70%;
+}
+main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
+.mnm{
+    flex: 100%;
+    max-width: 100%;
+}
+}
