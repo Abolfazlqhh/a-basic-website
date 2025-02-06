@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+      body {
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        grid-template-areas:
+          "navbar main"
+          "navbar footer";
+        margin: 0;
+        background-image: url("images/rr/download\ \(2\).jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        grid-template-rows: auto 1fr;
+        min-height: 100vh;
+      }
+      nav {
+        grid-area: navbar;
+        background-color: black;
+        grid-template-columns: 1fr;
+        display: grid;
+        grid-template-areas:
+          "ddiv"
+          "lii"
+          "lii"
+          "lii"
+          "lii";
+        position: fixed;
+        top: 0;
+        align-self: flex-start;
+        height: 100vh;
+        width: 100px;
+      }
+      main {
+        grid-area: main;
+        text-align: center;
+        width: 90%;
+        height: 100%;
+        max-width: 1300px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      footer {
+        grid-area: footer;
+        color: aqua;
+        ;
+      }
+      .lii {
+        grid-area: lii;
+        color: aliceblue;
+        padding: 26px 0;
+        list-style-type: none;
+        border: no;
+        background-color: black;
+      }
+      .ddiv {
+        grid-area: ddiv;
+        background-image: url("images/The\ Weeknd\ &\ Gesaffelstein\ Wallpaper.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.8;
+        margin-bottom: 40px;
+      }
+      a {
+        text-decoration: none;
+      }
+      ul {
+        margin-left: -40px;
+        text-align: center;
+      }
+      li:hover {
+        background-color: rgb(7, 65, 104);
+        position: static;
+      }
+      .main1 {
+        font-size: 90px;
+        color: aliceblue;
+        top: 11%;
+        height: 24%;
+        position: relative;
+      }
+      .main2 {
+        color: aliceblue;
+        text-align: justify;
+        font-size: 17px;
+        word-spacing: 3px;
+      }
+      h1 {
+        text-align: left;
+        margin-bottom: 20px;
+        color: aliceblue;
+      }
+      hr {
+        width: 200px;;
+        opacity: 0.7;
+        margin: 0px 0px;
+        color: azure;
+      }
+      .skil {
+        text-align: left;
+        margin-bottom: ;
+        color: cornflowerblue;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        letter-spacing: 3px;
+        font-size: 19px;
+      }
+      .statis {
+        background-color: aliceblue;
+        width: 100%;
+        height: 30px;
+      }
+      .ppl {
+        width: 100%;
+        height: 180px;
+        background-color: aliceblue;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+      }
+      .bm {
+        width: ;
+      }
+      .bll {
+        font-size: 30px;
+        margin-top: 60px;
+        font-weight: 600;
+      }
+      .dnld{
+        width: 148px;
+        height: 40px;
+        background-color:aliceblue;
+        margin-top: 30px;
+        border-radius: 2px;
+        color: black;
+        float: left;
+        cursor: pointer;
+        margin-right: 100%;
+        margin-bottom: 30px;
+      }
+      button:hover{
+            background-color:rgb(189, 189, 189);
+      }
+      .photos{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 2px;
+      }
+      .mnm{
+        flex: 50%;
+        max-width: 50%;
+        padding: 0 2px;
+      }
+      .mnm img {
+        margin-top: 4px;
+        vertical-align: middle;
+        opacity: 0.7;
+      }
+      img:hover{
+        opacity: 1;
+      }
+      .cntc{
+        text-align: left;
+        margin-top: 30px;
+        color:aquamarine;
+        font-size: 25px;
+        letter-spacing: 2px;
+      }
+      i{
+        font-size: 40px;
+        margin-right: 50px;
+      }
+
+      @media (max-width: 600px) {
+        body {
+          display: grid;
+          grid-template-columns:;
+          grid-template-areas:
+            "main main main main"
+            "main main main main"
+            "main main main main"
+            "footer footer footer footer";
+          width: 100%;
+          grid-template-rows: 1fr 1fr auto auto;
+        }
+        nav {
+          height: 0px;
+          width: 100%;
+          padding: 0;
+          top: 0;
+        }
+        .lii {
+          padding: 17px 0;
+          float: left;
+          width: 25%;
+          margin-top: -20px;
+        }
+        .ddiv {
+          display: none;
+        }
+        ul {
+        }
+        .main1 {
+          position:static;
+          height: 10%;
+          margin-top: 70%;
+        }
+        main {
+          margin-left: auto;
+          margin-right: auto;
+          width: 95%;
+        }
+        .mnm{
+            flex: 100%;
+            max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="ddiv"></div>
+      <ul class="tntt">
+        <a href="#"> <li class="lii">HOME</li></a>
+        <a href="#"> <li class="lii">ABOUT</li></a>
+        <a href="#"> <li class="lii">PHOTOS</li></a>
+        <a href="#"> <li class="lii">CONTACTS</li></a>
+      </ul>
+    </nav>
+    <main>
+      <div class="main1">XO</div>
+      <div class="main2">
+        <h1>My Name</h1>
+        <hr>
+        <p style="margin-bottom: 60px">
+          my name is abolazl and i Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Ratione alias ullam iusto nobis ipsa rerum tempora
+          exercitationem praesentium natus dolorem commodi illum, harum impedit,
+          optio nam at, saepe porro! Totam sed quas, dolorum, modi magni atque,
+          non maxime nobis voluptas velit facilis in. Nihil voluptatem sint,
+          mollitia magnam expedita sequi ullam natus pariatur inventore
+          asperiores veritatis nulla officiis obcaecati, nisi iusto. Quod, at
+          sed, incidunt ab itaque dolore, est repellendus omnis praesentium quas
+          quis autem rerum harum? Fuga facere vel earum consequatur aperiam.
+          Explicabo sed temporibus totam tenetur in at saepe dignissimos vero
+          hic aliquid non nesciunt minus adipisci alias, voluptatum, earum
+          dolore deserunt reiciendis inventore voluptatem officia eligendi.
+          Aperiam, sequi aut animi alias fugit accusamus nam molestiae sed
+          tempore minus voluptate voluptas architecto facere asperiores
+          laudantium modi distinctio cum officia veritatis quisquam nemo
+          obcaecati. Assumenda temporibus tempora illum earum quod excepturi
+          modi ad nesciunt harum maxime veritatis rerum error maiores inventore
+          hic nemo sint est, possimus iusto cumque. Odio corporis eveniet nulla
+          ratione, fugiat itaque deleniti repellat voluptates ipsum ipsam maxime
+          quod, in rerum unde ex aperiam suscipit obcaecati, doloribus incidunt
+          ad cupiditate possimus fuga. Obcaecati reiciendis eveniet dignissimos
+          quisquam est ex voluptatem porro officiis esse labore, ut dicta odio
+          totam impedit corporis veritatis quidem veniam omnis mollitia?
+          Similique eaque consequuntur id vel commodi ipsa dicta maiores,
+          blanditiis facilis, officiis illum iusto et quis sint explicabo
+          temporibus, debitis eum cumque nihil! Rem impedit, quis ipsa,
+          necessitatibus pariatur consectetur, quisquam laborum cum illo in
+          alias! Maxime delectus repellat dolores quam error fuga facilis
+          deserunt laboriosam. Suscipit rerum, repellat placeat odio totam ad
+          debitis minima sapiente nesciunt, quisquam, modi eaque consectetur
+          nulla explicabo molestias sint mollitia doloremque. Sit numquam
+          repudiandae officiis, ipsum hic officia ad nostrum autem? Voluptate
+          impedit dolorum neque rem tempore. Id fuga dolor nobis eaque quae quas
+          veniam provident maiores reprehenderit facilis, nemo mollitia.
+          Corporis odit provident animi harum rem impedit adipisci pariatur vel
+          cum est itaque ipsa fugiat nisi ut nihil, similique quas expedita
+          rerum mollitia illum incidunt sed, fuga sapiente qui. Impedit quidem
+          ipsa facere, facilis voluptate odio asperiores exercitationem dolorum
+          quas expedita id autem nobis incidunt inventore, minima hic quam
+          perferendis, atque voluptatem assumenda quis labore dolores! Sunt quia
+          nihil laudantium aliquid quas illo veniam molestiae et rem in. Minus
+          molestias praesentium eaque. Quae maxime itaque iusto quas molestiae.
+          Quas, officia tenetur laboriosam beatae cum sunt deleniti quod
+          corporis? Rerum ea quod eius cupiditate? Temporibus sapiente
+          exercitationem voluptates a dolor aut deserunt necessitatibus odit
+          ducimus harum alias quae quia saepe modi quam, nihil laboriosam
+          quisquam expedita! Eum officiis fugiat dignissimos rerum nulla.
+          Architecto deserunt incidunt vitae animi voluptates fugit blanditiis
+          asperiores dicta tenetur repellendus quam ipsa repellat in, culpa
+          pariatur ex, sed sapiente perspiciatis eos quibusdam possimus? Debitis
+          quia aperiam dolorum eaque minima sed nobis quibusdam reprehenderit
+          incidunt, ullam quisquam hic veniam molestiae similique iure accusamus
+          nesciunt mollitia? Sapiente cumque repudiandae officiis dolor, labore
+          mollitia alias explicabo sit, ut, quod quae voluptas necessitatibus?
+          Vel voluptatum vitae sit facere veritatis, ad blanditiis quia nisi
+          itaque sunt.
+        </p>
+      </div>
+      <div>
+        <h1 style="margin-bottom: 40px">My Skills</h1>
+        <p class="skil">football</p>
+        <div class="statis">
+          <div
+            style="width: 80%; background-color: cornflowerblue; height: 100%"
+          ></div>
+        </div>
+        <p class="skil">game</p>
+        <div class="statis">
+          <div
+            style="width: 65%; background-color: cornflowerblue; height: 100%"
+          ></div>
+        </div>
+        <p class="skil">web disign</p>
+        <div class="statis" style="margin-bottom: 45px">
+          <div
+            style="width: 20%; height: 100%; background-color: cornflowerblue"
+          ></div>
+        </div>
+      </div>
+      <div class="ppl">
+        <div>
+          <div class="bll">10+</div>
+          <div>anything</div>
+        </div>
+        <div>
+          <div class="bll">55+</div>
+          <div>something</div>
+        </div>
+        <div>
+          <div class="bll">0+</div>
+          <div>nothing</div>
+        </div>
+        <div>
+          <div class="bll">90+</div>
+          <div>everything</div>
+        </div>
+      </div>
+     <button class="dnld">download resume</button>
+     <h1>My Photos</h1>
+     <hr>
+    <div class="photos">
+        <div class="mnm">
+         <img src="images/Travis Scott.jpg" style="width: 100%;">
+         <img src="images/rr/The weeknd dancing in the flames_.jpg" style="width:100%;">
+         <img src="images/rr/The Sexnd and Playboi Carti.jpg" style="width: 100%;">
+        </div>
+        <div class="mnm">
+        <img src="images/rr/Playboi carti.jpeg" style="width: 100%;">
+        <img src="images/rr/download.jpeg" style="width: 100%;">
+        <img src="images/rr/download (2).jpg " style="width: 100%;"> 
+        </div>
+    </div>
+  <footer>  <h1>Contact Me</h1>
+    <hr>
+     <div class="cntc"><i class="fa fa-map-marker" aria-hidden="true"></i> Tehran , IR
+     </div>
+     <div class="cntc"><i class="fa fa-phone" aria-hidden="true"></i>09370000001
+     </div>
+     <div class="cntc"><i class="fa fa-envelope" aria-hidden="true"></i>chekhbar@gmail.com
+
+     </div>
+     <div class="cntc" style="margin-bottom: 200px;"><i class="fa fa-paper-plane" aria-hidden="true"></i>id: XnOwChild
+     </div>
+     <hr></footer>
+    </main>
+  </body>
+</html>
