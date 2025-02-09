@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: linear-gradient(-25deg , );
+    background-attachment: fixed;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-image: url("images/rr/The\ weeknd\ dancing\ in\ the\ flames_.jpg");
+animation: bgmove 20s infinite;
+animation-timing-function: linear;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+@keyframes bgmove {
+    from {
+        background-image: url("images/contact/download\ \(3\).jpg");
+    }
+    to {
+        background-image: url("images/contact/@rem_illustrations.jpg");
+    }
+}
+.base{
+    height: 650px;
+    width: 650px;
+    background-color: #fff;
+    clip-path: circle(50%);
+    display:grid;
+    grid-template-rows: 45% 30% 25%;
+    grid-template-areas:
+    "prof"
+    "underprof"
+    "underunder";
+    box-shadow: 0px 0px 74px 7px rgba(0,0,0,0.75);
+}
+.prof{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative ;
+    top:40px;
+}
+.und{
+    grid-area: underprof;
+    text-align: center;
+    position: relative;
+    top:25px; 
+    font-size: 30px;
+}
+.und2{
+    grid-area: underunder;
+    background-color: black;
+    height: 60px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -35px;
+    width:600px ;
+    margin-left: 25px;
+    color: rgb(255, 255, 255);
+}
+img{
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px 7px rgba(0,0,0,0.75);
+}
+svg{
+    color: #fff;
+    width: 35px;
+    height: 35px; 
+    margin: 0 4px;
+
+}
+a{
+    color: #fff;
+}

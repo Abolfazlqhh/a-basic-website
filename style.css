@@ -58,6 +58,7 @@ color: aqua;
   grid-template-areas: "sin sup";
   margin-left: 105px;
   text-align: center;
+  position:sticky;
 }
 .sin{
   background-color: rgb(2, 34, 94);
