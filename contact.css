@@ -81,3 +81,30 @@ svg{
 a{
     color: #fff;
 }
+@media (max-width:700px) {
+    .base{
+        height: 400px;
+        width: 400px;
+    }
+    .prof{
+        top:15px;
+}
+.und{
+    top:16px;
+    font-size: 19px;
+}
+.und2{
+    height: 37px;
+    top:-22px;
+    width: 400px;
+    margin: 0;
+}
+img{
+    width: 160px;
+    height: 160px;
+}
+svg{
+    width: 26px;
+    height: 26px;
+}
+}
