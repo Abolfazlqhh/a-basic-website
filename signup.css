@@ -11,16 +11,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    animation: bgmove 20s infinite;
-    animation-timing-function: linear;
-  }
-  @keyframes bgmove {
-    from {
-      background-image: url("images/rr/download\ \(2\).jpg");
-    }
-    to {
-      background-image: url("images/rr/The\ weeknd\ dancing\ in\ the\ flames_.jpg");
-    }
+    background-image: url("images/rr/The\ weeknd\ dancing\ in\ the\ flames_.jpg");
   }
   .container {
     width: 65%;
